@@ -18,7 +18,7 @@ const config: Config = {
         'secondary': '#845e2c',
         'accent': '#c0988a',
         'dark-brown': '#5e2e18',
-        'light-brown': '#956f64',
+        'light-brown': '#C4A484',
       },
     },
   },

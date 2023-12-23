@@ -9,7 +9,7 @@ interface InfoCardProps {
 
 const InfoCard: React.FC<InfoCardProps> = ({ title, description }) => {
   return (
-    <div className="bg-white text-primary-dark rounded-md flex flex-col items-center p-3 text-center w-60 h-40">
+    <div className="bg-white text-primary-dark rounded-md flex flex-col items-center p-3 text-center w-60 h-40 transition-transform transform hover:scale-110 hover:shadow-2xl border-b-4 border-dark-brown border-primary">
       <div className="mt-1">
         <Info size={32} />
       </div>
