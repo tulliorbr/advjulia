@@ -20,7 +20,7 @@ const ImageSlider = () => {
 
   return (
     <div className="relative h-full w-full">
-      <p className="absolute text-white text-center z-50 top-1/3 md:left-1/4 md:right-1/4 px-10 bottom-1/3 text-sm md:text-base lg:text-lg xl:text-xl">
+      <p className="absolute text-white text-center  top-1/3 md:left-1/4 md:right-1/4 px-10 bottom-1/3 text-sm md:text-base lg:text-lg xl:text-xl">
         <strong>PROPOSITO</strong>
         <br />
         <br />
@@ -38,7 +38,7 @@ const ImageSlider = () => {
               <Image
                 src={image}
                 alt={`imageSlider-${index}`}
-                className="object-cover w-full h-[550px] max-w-full"
+                className="object-cover w-full h-[650px] max-w-full"
                 style={{
                   objectPosition:
                     index >= 0 && index <= 2 ? "50% 25%" : "50% 45%",

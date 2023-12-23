@@ -1,34 +1,79 @@
-import Image from 'next/image';
-import React from 'react';
+import React from "react";
+import InfoCard from "./InfoCard";
 
 const CardInformation: React.FC = () => {
+  const infoCards = [
+    {
+      title: "Ações Trabalhistas",
+      description: "Questões legais entre empregadores e empregados.",
+    },
+    {
+      title: "Acidente de Trabalho",
+      description:
+        "Lesão ou morte durante o trabalho, gerando direitos ao trabalhador.",
+    },
+    {
+      title: "Acidente de Trajeto / Percurso",
+      description: "Acidentes no trajeto entre casa e trabalho.",
+    },
+    {
+      title: "Doenças Ocupacionais",
+      description: "Condições de saúde relacionadas ao trabalho.",
+    },
+    {
+      title: "Verbas Rescisórias",
+      description: "Valores devidos na rescisão do contrato de trabalho.",
+    },
+    {
+      title: "Adicional de Insalubridade / Periculosidade",
+      description: "Pagamento extra por condições arriscadas.",
+    },
+    {
+      title: "Pagamento de Horas Extras",
+      description: "Remuneração por trabalho além da jornada normal.",
+    },
+    {
+      title: "Trabalho sem Carteira Assinada",
+      description: "Atividades sem contrato formalizado.",
+    },
+    {
+      title: "Dano Moral / Assédio Moral",
+      description: "Situações que afetam dignidade ou integridade emocional.",
+    },
+    {
+      title: "Demissão por Justa Causa",
+      description: "Rescisão por falta grave, dispensando algumas verbas.",
+    },
+    {
+      title: "Trabalho Rural",
+      description: "Atividades laborais no campo, como agricultura.",
+    },
+    {
+      title: "Desvio/Acúmulo de Função",
+      description:
+        "Atribuição de responsabilidades extras ou acumulo de funções.",
+    },
+  ];
+
   return (
-    <div className="bg-white shadow-md rounded-lg p-4">
-      <h2 className="text-xl font-bold mb-2">Card Information</h2>
-      <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <div className="flex justify-between mt-4">
-        <div className="flex items-center">
-          <Image src="" alt="Card Icon" className="w-6 h-6 mr-2" />
-          <span className="text-gray-700">Card Number</span>
-        </div>
-        <span className="text-gray-700">**** **** **** 1234</span>
-      </div>
-      <div className="flex justify-between mt-2">
-        <div className="flex items-center">
-          <Image src="" alt="Card Icon" className="w-6 h-6 mr-2" />
-          <span className="text-gray-700">Card Holder</span>
-        </div>
-        <span className="text-gray-700">John Doe</span>
-      </div>
-      <div className="flex justify-between mt-2">
-        <div className="flex items-center">
-          <Image src="" alt="Card Icon" className="w-6 h-6 mr-2" />
-          <span className="text-gray-700">Expiration Date</span>
-        </div>
-        <span className="text-gray-700">12/24</span>
+    <div className="bg-light-brown shadow-md rounded-lg p-4 w-full flex flex-col items-center justify-center">
+      <p className="mb-4 text-lg">Como posso te ajudar</p>
+      <div className="flex flex-wrap justify-center">
+        {infoCards.map((infoCard, index) => (
+          <div
+            key={index}
+            className="m-2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
+          >
+            <InfoCard
+              title={infoCard.title}
+              description={infoCard.description}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
+  
 };
 
 export default CardInformation;
