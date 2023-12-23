@@ -22,7 +22,7 @@ const Header: React.FC = () => {
           <li><a href="#">Onde me encontrar?</a></li>
         </ul>
       </nav>
-      <div className='gap-3'>
+      <div className='gap-5'>
         <button><InstagramLogo size={32} /></button>
         <button><LinkedinLogo size={32} /></button>
         <button><WhatsappLogo size={32} /></button>
