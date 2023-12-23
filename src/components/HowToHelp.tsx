@@ -41,14 +41,6 @@ const CardInformation: React.FC = () => {
       description: "Situações que afetam dignidade ou integridade emocional.",
     },
     {
-      title: "Demissão por Justa Causa",
-      description: "Rescisão por falta grave, dispensando algumas verbas.",
-    },
-    {
-      title: "Trabalho Rural",
-      description: "Atividades laborais no campo, como agricultura.",
-    },
-    {
       title: "Desvio/Acúmulo de Função",
       description:
         "Atribuição de responsabilidades extras ou acumulo de funções.",
@@ -57,7 +49,8 @@ const CardInformation: React.FC = () => {
 
   return (
     <div className="bg-light-brown shadow-md rounded-lg p-4 w-full flex flex-col items-center justify-center">
-      <p className="mb-3 font-bold text-lg">Como posso te ajudar</p>
+      <p className="font-bold text-lg">Como posso te ajudar</p>
+      <small className="mb-3 text-center">Aqui estão alguns dos serviços que posso te auxiliar. Não encontrou o que precisa? Entra em contato comigo!</small>
       <div className="flex flex-wrap justify-center w-full">
         {infoCards.map((infoCard, index) => (
           <div key={index} className="m-4">
