@@ -57,13 +57,10 @@ const CardInformation: React.FC = () => {
 
   return (
     <div className="bg-light-brown shadow-md rounded-lg p-4 w-full flex flex-col items-center justify-center">
-      <p className="mb-4 text-lg">Como posso te ajudar</p>
-      <div className="flex flex-wrap justify-center">
+      <p className="mb-3 text-lg">Como posso te ajudar</p>
+      <div className="flex flex-wrap justify-center w-full">
         {infoCards.map((infoCard, index) => (
-          <div
-            key={index}
-            className="m-2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
-          >
+          <div key={index} className="m-4">
             <InfoCard
               title={infoCard.title}
               description={infoCard.description}
@@ -73,7 +70,6 @@ const CardInformation: React.FC = () => {
       </div>
     </div>
   );
-  
 };
 
 export default CardInformation;
