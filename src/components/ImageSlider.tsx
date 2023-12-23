@@ -32,7 +32,7 @@ const ImageSlider = () => {
         e uma responsabilidade."`}
       </div>
       <div className="opacity-25">
-        <Slide arrows={false} duration={3000}>
+        <Slide arrows={false} duration={3000} canSwipe={false}>
           {imageSlider.map((image, index) => (
             <div key={index} style={slideStyle}>
               <Image
