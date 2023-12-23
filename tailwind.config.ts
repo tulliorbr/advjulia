@@ -19,6 +19,7 @@ const config: Config = {
         'accent': '#c0988a',
         'dark-brown': '#5e2e18',
         'light-brown': '#C4A484',
+        'whatsapp': '#25D366',
       },
     },
   },
