@@ -48,7 +48,7 @@ const CardInformation: React.FC = () => {
   ];
 
   return (
-    <div className="bg-light-brown shadow-md rounded-lg p-4 w-full flex flex-col items-center justify-center">
+    <div id="howToHelp" className="bg-light-brown shadow-md rounded-lg p-4 w-full flex flex-col items-center justify-center">
       <p className="font-bold text-lg">Como posso te ajudar</p>
       <small className="mb-3 text-center">Aqui estão alguns dos serviços que posso te auxiliar. Não encontrou o que precisa? Entra em contato comigo!</small>
       <div className="flex flex-wrap justify-center w-full">

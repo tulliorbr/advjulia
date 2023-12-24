@@ -80,13 +80,13 @@ export default function Header() {
           isMobileMenuOpen ? "hidden" : ""
         }`}
       >
-        <Link to="inicio" spy={true} smooth={true} offset={1} duration={500}>
+        <Link to="inicio" spy={true} smooth={true} offset={0} duration={500}>
           Início
         </Link>
-        <Link to="service" spy={true} smooth={true} offset={-90} duration={500}>
+        <Link to="howToHelp" spy={true} smooth={true} offset={-80} duration={500}>
           Como posso te ajudar
         </Link>
-        <Link to="destiny" spy={true} smooth={true} offset={-50} duration={500}>
+        <Link to="about" spy={true} smooth={true} offset={-50} duration={500}>
           Sobre mim
         </Link>
         <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
@@ -120,7 +120,7 @@ export default function Header() {
               </li>
               <li className="mb-4">
                 <Link
-                  to="service"
+                  to="howToHelp"
                   spy={true}
                   smooth={true}
                   offset={-80}
@@ -133,10 +133,10 @@ export default function Header() {
               </li>
               <li className="mb-4">
                 <Link
-                  to="destiny"
+                  to="about"
                   spy={true}
                   smooth={true}
-                  offset={1}
+                  offset={-80}
                   duration={500}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-black"
@@ -149,7 +149,7 @@ export default function Header() {
                   to="contact"
                   spy={true}
                   smooth={true}
-                  offset={-40}
+                  offset={-80}
                   duration={500}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-black"

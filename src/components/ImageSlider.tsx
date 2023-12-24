@@ -19,7 +19,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative h-full w-full">
+    <div id="inicio" className="relative h-full w-full">
       <div className="absolute text-white text-center flex flex-col top-[20%] md:top-1/3 md:left-1/4 md:right-1/4 px-10 bottom-1/3 ">
         <p className="text-6xl text-center font-bold">Julia Rauber</p>
         <small>Advogada trabalhista na defesa da classe trabalhadora</small>

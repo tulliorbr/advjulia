@@ -5,7 +5,7 @@ import foto1 from "../assets/foto1.jpg";
 
 const About: React.FC = () => {
   return (
-    <div className="bg-dark-brown shadow-t-md rounded-lg p-4 w-full flex flex-col items-center justify-center min-h-screen">
+    <div id="about" className="bg-dark-brown shadow-t-md rounded-lg p-4 w-full flex flex-col items-center justify-center min-h-screen">
       <p className="font-bold text-lg mb-8">Sobre mim</p>
       <div className="flex flex-col lg:flex-row w-full justify-center gap-10">
         <div className="w-full lg:w-1/3 grid justify-center">
